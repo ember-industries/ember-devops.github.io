@@ -184,14 +184,13 @@ ul.skills.inline li:nth-child(4) {
 }
 footer {
     bottom: 3rem;
-    left: 120px;
+    width: 98%;
+    left: 0;
     -webkit-animation: fadeIn 1s ease-out 1 1.6s;
     -ms-animation: fadeIn 1s ease-out 1 1.6s;
     animation: fadeIn 1s ease-out 1 1.6s;
     animation-fill-mode: forwards;
-}
-footer p {
-    float: left;
+    text-align: right;
 }
 ::-moz-selection {
     background: rgba(0,0,0,.1) !important;
@@ -330,9 +329,6 @@ ul::selection {
         top: 8.5rem;
         left: -15px;
     }
-    ul.skills.inline {
-        left: 16.8rem;
-    }
     h2 {
         font-size: 25px;
         line-height: 40px;
@@ -342,15 +338,12 @@ ul::selection {
     .wrapper {
         padding: 80px 80px 0;
     }
-    footer, h2 {
+    h2 {
         left: 80px;
     }
     ul.skills {
         top: 8.5rem;
         left: -0.8rem;
-    }
-    ul.skills.inline {
-        left: 16.8rem;
     }
 }
 @media screen and (max-width:767px) {
@@ -371,18 +364,11 @@ ul::selection {
         height: 100px;
         top: 18%;
     }
-    ul.skills.inline {
-        display: block;
-        position: static;
-    }
     h2 {
         font-size: 18px;
         line-height: 34px;
         left: 20px;
         bottom: auto;
         top: 35%;
-    }
-    footer {
-        left: 20px;
     }
 }
