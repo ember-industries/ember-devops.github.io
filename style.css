@@ -69,13 +69,13 @@ a {
     position: relative;
 }
 a:hover{
-    color: #b83343;
-    border-color: #b83343;
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -ms-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+    color: #e3a7b6;
+    border-color: #e3a7b6;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 a.logo {
     position: relative;
@@ -151,32 +151,32 @@ ul.skills.inline {
 }
 ul.skills li {
     width: 100%;
-    -webkit-animation: rotateWord 12s cubic-bezier(1,0,0,1) infinite 0s;
-    -ms-animation: rotateWord 12s cubic-bezier(1,0,0,1) infinite 0s;
-    animation: rotateWord 12s cubic-bezier(1,0,0,1) infinite 0s;
+    -webkit-animation: rotateWord 20s cubic-bezier(1,0,0,1) infinite 0s;
+    -ms-animation: rotateWord 20s cubic-bezier(1,0,0,1) infinite 0s;
+    animation: rotateWord 20s cubic-bezier(1,0,0,1) infinite 0s;
 }
 ul.skills li:nth-child(2) {
-    -webkit-animation-delay: 3s;
-    -ms-animation-delay: 3s;
-    animation-delay: 3s;
+    -webkit-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    animation-delay: 5s;
     color: #ffbccc;
 }
 ul.skills.inline li:nth-child(2) {
     color: #e3a7b6;
 }
 ul.skills li:nth-child(3) {
-    -webkit-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    animation-delay: 10s;
     color: #ffc39e;
 }
 ul.skills.inline li:nth-child(3) {
     color: #ebb391;
 }
 ul.skills li:nth-child(4) {
-    -webkit-animation-delay: 9s;
-    -ms-animation-delay: 9s;
-    animation-delay: 9s;
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
     color: #77b1ff;
 }
 ul.skills.inline li:nth-child(4) {
@@ -327,7 +327,11 @@ ul::selection {
 }
 @media screen and (max-width: 1200px) {
     ul.skills {
-        left: -20px;
+        top: 8.5rem;
+        left: -15px;
+    }
+    ul.skills.inline {
+        left: 16.8rem;
     }
     h2 {
         font-size: 25px;
@@ -341,12 +345,19 @@ ul::selection {
     footer, h2 {
         left: 80px;
     }
+    ul.skills {
+        top: 8.5rem;
+        left: -0.8rem;
+    }
+    ul.skills.inline {
+        left: 16.8rem;
+    }
 }
 @media screen and (max-width:767px) {
     .wrapper {
         padding: 40px 20px;
     }
-    .hide, footer {
+    .hide {
         display: none;
     }
     h1 small {
@@ -358,8 +369,11 @@ ul::selection {
         left: -5px;
         line-height: 100px;
         height: 100px;
-        top: auto;
-        bottom: 10%;
+        top: 18%;
+    }
+    ul.skills.inline {
+        display: block;
+        position: static;
     }
     h2 {
         font-size: 18px;
@@ -367,5 +381,8 @@ ul::selection {
         left: 20px;
         bottom: auto;
         top: 35%;
+    }
+    footer {
+        left: 20px;
     }
 }
