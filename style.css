@@ -13,6 +13,7 @@ html,
 body,
 .wrapper {
     height: 100%;
+    position: relative;
 }
 body,
 h1,
@@ -143,11 +144,10 @@ ul.skills {
 ul.skills.inline {
     font-size: 16px;
     line-height: 28px;
-    top: 0;
-    left: 15rem;
-    right: 0;
+    position: static;
+    float: left;
     color: #67dbcc;
-
+    display: block;
 }
 ul.skills li {
     width: 100%;
@@ -183,7 +183,7 @@ ul.skills.inline li:nth-child(4) {
     color: #71a8f2;
 }
 footer {
-    bottom: 80px;
+    bottom: 3rem;
     left: 120px;
     -webkit-animation: fadeIn 1s ease-out 1 1.6s;
     -ms-animation: fadeIn 1s ease-out 1 1.6s;
@@ -191,7 +191,7 @@ footer {
     animation-fill-mode: forwards;
 }
 footer p {
-    position: relative;
+    float: left;
 }
 ::-moz-selection {
     background: rgba(0,0,0,.1) !important;
